@@ -1,113 +1,276 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <div className="bg-black text-white">
+        {/* Hero */}
+        <section
+          style={{
+            backgroundImage: 'url("/images/back_hero.avif")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}>
+          <div className="container flex flex-col mx-auto px-6 py-8 md:px-8 md:py-16   xl:px-48 xl:py-20">
+            <div id="logo" className="mb-8 flex md:justify-center">
+          
+            </div>
+
+            <div id="hero_content" className="md:flex md:flex-row gap-8">
+              <div className="space-y-4 md:w-[400px] flex flex-col justify-center ">
+                <Image
+                  className=""
+                  src="/images/lg.svg"
+                  width={97}
+                  height={94}
+                  alt="Larissa Godomski"
+                />
+                <h1 className="">
+                  Seja<br></br> Bem-Vindo(a)
+                </h1>
+                <p className="xl:text-xl">
+                  Nosso escritório de advocacia é dedicado a oferecer suporte
+                  jurídico especializado em direito previdenciário.
+                </p>
+                <p className="xl:text-xl">
+                  Aqui, comprometemo-nos a proporcionar soluções eficazes e
+                  personalizadas para suas questões previdenciárias.
+                </p>
+                <Link href="" className="flex flex-row">
+                  <p className="zapbutton">
+                    <strong>Entre em contato</strong> e fale conosco
+                  </p>
+                </Link>
+              </div>
+              <div className="hidden md:w-1/2 md:flex justify-center -mb-44">
+                <Image
+                  className="w-full"
+                  src="/images/estatua.avif"
+                  width={464}
+                  height={763}
+                  alt="Larissa Godomski"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section>
+          <div className="container flex flex-col mx-auto px-6 py-8 space-y-4 md:flex-row md:gap-8 md:px-8 md:py-16   xl:px-48 xl:py-20 items-center">
+            <div className="md:w-1/2">
+              <Image
+                className=""
+                src="/images/lari.avif"
+                width={534}
+                height={661}
+                alt="Foto de Larissa Godomski"
+              />
+            </div>
+            <div className="space-y-4 md:w-1/2">
+              <h1>Quem somos</h1>
+              <p>
+                Eu sou Larissa Gadomski, advogada especializada em direito
+                previdenciário. Com uma paixão inabalável pela justiça social,
+                dedico-me a ajudar indivíduos a obterem os benefícios
+                previdenciários que merecem.
+              </p>
+              <p>
+                Minha jornada no mundo jurídico começou com a firme convicção de
+                que todos têm direito a uma aposentadoria digna e acesso aos
+                benefícios previdenciários. Com anos de experiência e mais de
+                mil casos de concessão, tenho orgulho de ter ajudado inúmeras
+                pessoas a garantirem seus direitos no campo do direito
+                previdenciário.
+              </p>
+
+              <div className="flex w-fit space-x-3 border-[1px] rounded-full border-black py-3 px-6 items-center">
+                <Image
+                  className="w-[24px] h-[24px]"
+                  src="/images/icon_xp.png"
+                  width={24}
+                  height={24}
+                  alt="Icone da balança"
+                />
+                <p className="w-full md:w-auto">+5 Anos de experiência</p>
+              </div>
+              <div className="flex w-fit space-x-3 border-[1px] rounded-full border-black py-3 px-6 items-center ">
+                <Image
+                  className="w-[24px] h-[24px]"
+                  src="/images/icon_law.png"
+                  width={24}
+                  height={24}
+                  alt="Icone da balança"
+                />
+                <p className="w-full md:w-auto">
+                  Especialista em direito previdenciário
+                </p>
+              </div>
+
+              <Link href="" className="flex flex-row">
+                <p className="zapbutton ">
+                  <strong>Entre em contato</strong> e fale conosco
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Slider */}
+        <section className="goldradial">
+          <div className=" flex flex-col mx-auto  gap-4 text-center  py-8   md:py-16    xl:py-20">
+            <h1>Áreas de especialização</h1>
+            <p>
+              Especializo-me em diversos benefícios previdenciários, incluindo:
+            </p>
+
+          </div>
+        </section>
+
+        {/* Atendimento */}
+        <section>
+          <div className="container flex flex-col mx-auto md:text-center px-6 py-8 gap-4  md:px-8 md:py-16   xl:px-48 xl:py-20 items-center">
+            <h1 className="text-center">Atendimento presencial e online</h1>
+            <p className="md:self-center xl:text-xl xl:w-3/4 2xl:w-1/2 text-center">
+              Entendemos que a comodidade é crucial, por isso oferecemos
+              atendimento presencial e online. Independentemente de onde você
+              esteja, estamos prontos para fornecer orientação jurídica
+              personalizada e eficiente.
+            </p>
+            <div className="flex flex-col md:flex-row   gap-8 w-full my-8 2xl:w-3/4">
+              <div
+                className="w-full h-[400px] rounded-3xl  md:rounded-[64px] border-4 border-[#DFC181] md:w-1/2 xl:h-[500px]"
+                style={{
+                  backgroundImage: 'url("/images/b1.avif")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}></div>
+              <div
+                className="hidden md:block w-full h-[400px] rounded-3xl md:w-1/2 md:rounded-[64px]  xl:h-[500px] border-4 border-[#DFC181]"
+                style={{
+                  backgroundImage: 'url("/images/b2.avif")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}></div>
+            </div>
+            <Link href="" className="flex flex-row ">
+              <p className="zapbutton ">
+                <strong>Entre em contato</strong> e fale conosco
+              </p>
+            </Link>
+          </div>
+        </section>
+
+        {/* Beneficios */}
+        <section className="goldradial">
+          <div className="container flex flex-col  mx-auto px-6 py-8  md:px-8 md:py-16   xl:px-48 xl:py-20  space-y-8 2xl:px-80 items-center ">
+            <h1 className="text-center">
+              Benefícios<br></br>previdenciários
+            </h1>
+            <ul className="space-y-4 [&>li]:flex [&>li]:flex-row [&>li]:gap-4 max-w-[600px]">
+              <li className="">
+                <Image
+                  className="w-16 h-16"
+                  src="/images/icon_apos.png"
+                  width={64}
+                  height={64}
+                  alt="Icone Aposentadoria por idade"
+                />
+                <p>
+                  <strong>Aposentadoria por idade:</strong> seja para
+                  trabalhadores urbanos ou rurais, auxiliamos no processo de
+                  aposentadoria por idade, garantindo que cada detalhe seja
+                  tratado com a máxima atenção.
+                </p>
+              </li>
+              <li>
+                <Image
+                  className="w-16 h-16"
+                  src="/images/icon_inva.png"
+                  width={64}
+                  height={64}
+                  alt="Icone Aposentadoria por invalidez"
+                />
+                <p>
+                  <strong>Aposentadoria por invalidez:</strong> em casos de
+                  incapacidade para o trabalho, oferecemos suporte para garantir
+                  seus direitos à aposentadoria por invalidez.
+                </p>
+              </li>
+              <li>
+                <Image
+                  className="w-16 h-16"
+                  src="/images/icon_doen.png"
+                  width={64}
+                  height={64}
+                  alt="Icone Auxílio-doença"
+                />
+                <p>
+                  <strong>Auxílio-doença:</strong> orientamos e representamos
+                  clientes que necessitam de auxílio-doença devido a condições
+                  médicas que impedem a continuidade do trabalho.
+                </p>
+              </li>
+              <li>
+                <Image
+                  className="w-16 h-16"
+                  src="/images/icon_loas.png"
+                  width={64}
+                  height={64}
+                  alt="Icone Loas para deficientes e idosos"
+                />
+                <p>
+                  <strong>Loas para deficientes e idosos:</strong> auxiliamos na
+                  obtenção do benefício de prestação continuada (loas) para
+                  pessoas com deficiência ou idosos em situação de
+                  vulnerabilidade.
+                </p>
+              </li>
+              <li>
+                <Image
+                  className="w-16 h-16"
+                  src="/images/icon_mate.png"
+                  width={64}
+                  height={64}
+                  alt="Icone Salário-maternidade"
+                />
+                <p>
+                  <strong>Salário-maternidade:</strong> oferecemos suporte para
+                  mães garantirem seu direito ao salário-maternidade durante o
+                  período de licença.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Segurança */}
+        <section>
+          <div className="container flex flex-col md:flex-row mx-auto px-6 py-8 space-y-4 md:px-8 md:py-16 md:space-x-8 md:space-y-0 xl:px-48 xl:py-20 xl:space-x-12 2xl:px-80">
+            <div
+              className="w-full h-[400px] rounded-3xl md:w-1/2 md:rounded-[64px] xl:w-1/2 xl:h-[500px]"
+              style={{
+                backgroundImage: 'url("/images/larissa1.avif")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}></div>
+            <div className="space-y-4 xl:space-y-8 md:w-1/2 justify-center  flex flex-col ">
+              <h1>A segurança de um futuro melhor</h1>
+              <p className="xl:text-xl">
+                Estamos aqui para ajudar a construir um futuro seguro para você.
+                Entre em contato conosco para uma consulta inicial e permita-nos
+                guiar você pelos intricados caminhos do direito previdenciário.
+              </p>
+              <Link href="" className="flex flex-row">
+                <p className="zapbutton ">
+                  <strong>Entre em contato</strong> e fale conosco
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
