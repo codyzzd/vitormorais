@@ -7,11 +7,7 @@ import { FacebookPixelEvents } from "./comps/pixel";
 
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--inter",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
