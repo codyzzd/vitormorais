@@ -1,12 +1,24 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bebas_Neue, Inter } from "next/font/google";
 import { Suspense } from "react";
 import { FacebookPixelEvents } from "./comps/pixel";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--inter",
+});
+
+export const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+  variable: "--font-bebas",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -32,8 +44,9 @@ export default function RootLayout({
       <Suspense fallback={null}>
         <FacebookPixelEvents />
       </Suspense>
+      <Analytics />
       <SpeedInsights />
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${bebas.variable}`}>{children}</body>
     </html>
   );
 }

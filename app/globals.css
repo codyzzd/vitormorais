@@ -1,6 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .green-button {
+    @apply px-6 py-3 bg-[#8FFF00] text-black inline-block rounded-md font-bold transition-all duration-300;
+  }
+  .green-button:hover{
+    @apply shadow-[0_0px_20px_0px_rgba(143,255,0,1)]
+  }
+}
+
+.bebas {
+  font-family: var(--font-bebas);
+}
+h1 {
+  font-size: clamp(48px, 5vw, 56px);
+  line-height: 3.5rem;
+}
+h2 {
+  font-size: clamp(40px, 5vw, 48px);
+  line-height: 4rem;
+}
+h3 {
+  font-size: clamp(32px, 5vw, 40px);
+  line-height: 4rem;
+}
+h4 {
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 4rem;
+}
+h5 {
+  font-size: clamp(20px, 5vw, 24px);
+  line-height: 4rem;
+}
+h6 {
+  font-size: clamp(18px, 5vw, 20px);
+  line-height: 4rem;
+}
+
 /*
 :root {
   --foreground-rgb: 0, 0, 0;
