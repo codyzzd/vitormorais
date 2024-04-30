@@ -10,15 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Krüger Advocacia",
-    default: "Krüger Advocacia",
+    template: "%s | Método Vitor Morais",
+    default: "Método Vitor Morais",
   },
-  description: "frase.",
-  verification: {
+  description:
+    "Obtenha acesso ao meu método de treino e veja como é simples perder peso, ganhar força e definir o corpo em treinos que tomam menos de 30 minutos do seu dia.",
+  /*verification: {
     other: {
       "facebook-domain-verification": ["xxx"],
     },
-  },
+  },*/
 };
 
 export default function RootLayout({
