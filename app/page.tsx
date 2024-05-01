@@ -1,5 +1,15 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import {
+  faCircleCheck,
+  faLaptop,
+  faMobile,
+  faTv,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+config.autoAddCss = false;
 
 export default function Home() {
   return (
@@ -52,38 +62,40 @@ export default function Home() {
             </div>
           </div>
           {/* mobile */}
-          <div
-            id="hero_image_mobile"
-            className="w-full h-[500px]"
-            style={{
-              backgroundImage: 'url("/images/vitorraio.avif")',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}></div>
-          <div className=" flex flex-col container  px-6 py-8">
-            <div id="hero_content" className="flex flex-col gap-4">
-              <Image
-                className="w-1/2"
-                src="/images/vitorlogo.avif"
-                width={164}
-                height={164}
-                alt="Logo Método Vitor Morais"
-              />
-              <h1 className="bebas">
-                Transforme seu corpo treinando no conforto da sua casa com
-                poucos minutos do seu dia
-              </h1>
-              <p className="text-xl">
-                Obtenha acesso ao meu método de treino e veja como é simples{" "}
-                <strong>perder peso, ganhar força e definir o corpo</strong> em
-                treinos que tomam menos de 30 minutos do seu dia.
-              </p>
-              <Link href="/">
-                <p className="green-button">CTA</p>
-              </Link>
-              <p className="">
-                De 12x de R$ 39,90 por 12x de R$ 19,90 no plano anual
-              </p>
+          <div id="mobile_content" className="md:hidden">
+            <div
+              id="hero_image_mobile"
+              className="w-full h-[500px]"
+              style={{
+                backgroundImage: 'url("/images/vitorraio.avif")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}></div>
+            <div className=" flex flex-col container  box-1">
+              <div id="hero_content" className="flex flex-col gap-4">
+                <Image
+                  className="w-1/2"
+                  src="/images/vitorlogo.avif"
+                  width={164}
+                  height={164}
+                  alt="Logo Método Vitor Morais"
+                />
+                <h1 className="bebas">
+                  Transforme seu corpo treinando no conforto da sua casa com
+                  poucos minutos do seu dia
+                </h1>
+                <p className="text-xl">
+                  Obtenha acesso ao meu método de treino e veja como é simples{" "}
+                  <strong>perder peso, ganhar força e definir o corpo</strong>{" "}
+                  em treinos que tomam menos de 30 minutos do seu dia.
+                </p>
+                <Link href="/" className="">
+                  <p className="green-button w-full text-center">CTA</p>
+                </Link>
+                <p className="">
+                  De 12x de R$ 39,90 por 12x de R$ 19,90 no plano anual
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -124,8 +136,8 @@ export default function Home() {
                 alt="Prova 4"
               />
             </div>
-            <Link href="/">
-              <p className="green-button">CTA</p>
+            <Link href="/" className="">
+              <p className="green-button w-full text-center">CTA</p>
             </Link>
           </div>
         </section>
@@ -134,7 +146,7 @@ export default function Home() {
         <section>
           <div className="container flex flex-col  box-1 space-y-4">
             <h2 className="bebas w-3/4">O que é o Método Vitor Morais?</h2>
-            <p>
+            <p className="">
               <strong>Sua iniciação para sua nova vida fitness!</strong>
             </p>
             <p>
@@ -142,6 +154,22 @@ export default function Home() {
               meus 7 anos de experiencia na área esportiva e que me fez alcançar
               o físico, saúde e habilidades que tenho hoje!
             </p>
+
+            <Image
+              className="w-full"
+              src="/images/exec_avan.avif"
+              width={1091}
+              height={1229}
+              alt="Exercícios Avançados"
+            />
+            <Image
+              className="w-full"
+              src="/images/exec_adap.avif"
+              width={1092}
+              height={1229}
+              alt="Exercícios Adaptados"
+            />
+
             <p>
               Durante <strong>quatro semanas</strong> você terá treinos
               exclusivos e únicos diariamente,
@@ -149,36 +177,98 @@ export default function Home() {
                 seguindo meu protocolo para alcançar sua melhor versão!
               </strong>
             </p>
-            <Link href="/">
-              <p className="green-button">CTA</p>
+            <Link href="/" className="">
+              <p className="green-button w-full text-center">CTA</p>
             </Link>
           </div>
         </section>
 
         {/* alem disso voce tera */}
-        <section className="bg-orange-600 text-white">
-          <div className="container flex flex-col box-1">
+        <section className="bg-[#FF3E00] text-white">
+          <div className="container flex flex-col box-1 space-y-4">
             <h2 className="bebas w-3/4">Além disso, você terá acesso a:</h2>
-            
+
+            <div className="text-xl font-bold flex gap-4 items-center">
+              <Image
+                className="w-12"
+                src="/images/whatsapp.svg"
+                width={80}
+                height={80}
+                alt="Exercícios Adaptados"
+              />
+              <p>Comunidade Exclusiva no Whatsapp</p>
+            </div>
+            <div className="text-xl font-bold flex gap-4 items-center">
+              <Image
+                className="w-12"
+                src="/images/lives.svg"
+                width={80}
+                height={80}
+                alt="Exercícios Adaptados"
+              />
+              <p>Lives exclusivas com a comunidade</p>
+            </div>
+            <div className="text-xl font-bold flex gap-4 items-center">
+              <Image
+                className="w-12"
+                src="/images/protocolos.svg"
+                width={80}
+                height={80}
+                alt="Exercícios Adaptados"
+              />
+              <p>Acesso aos próximos protocolos de treinos</p>
+            </div>
           </div>
         </section>
 
         {/* veja de onde quiser */}
         <section>
-          <div className="container flex flex-col box-1 text-center">
+          <div className="container flex flex-col box-1 space-y-4">
             <h2 className="bebas">Veja de onde você quiser!</h2>
 
-            <Link href="/">
-              <p className="green-button">
-                Quero ter acesso ao Método Vitor Morais
-              </p>
+            <div className="flex flex-col space-y-4 text-xl font-bold">
+              <div className="p-8 flex   gap-4 border-slate-700 border-[1px] items-center">
+                <FontAwesomeIcon icon={faTv} size="2x" className="w-[48px]" />
+                <div>
+                  Faça as aulas na sua{" "}
+                  <span className="text-orange-600 inline">Smart TV</span>
+                </div>
+              </div>
+              <div className="p-8 flex gap-4 border-slate-700 border-[1px] items-center">
+                <FontAwesomeIcon
+                  icon={faLaptop}
+                  size="2x"
+                  className="w-[48px]"
+                />
+                <div>
+                  Assista no{" "}
+                  <span className="text-orange-600 inline">computador</span>
+                </div>
+              </div>
+              <div className="p-8 flex gap-4 border-slate-700 border-[1px] items-center">
+                <FontAwesomeIcon
+                  icon={faMobile}
+                  size="2x"
+                  className="w-[48px]"
+                />
+                <div>
+                  Assista no{" "}
+                  <span className="text-orange-600 inline">
+                    tablet ou celular
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <Link href="/" className="">
+              <p className="green-button w-full text-center">CTA</p>
             </Link>
           </div>
         </section>
 
         {/* tabela */}
-        <section>
-          <div className="container flex flex-col  box-1 text-center">
+        <section className="hidden">
+          <div className="container flex flex-col  box-1 ">
             <h2 className="bebas">
               Chegou a sua vez de entrar em forma e alcançar o corpo perfeito!
             </h2>
@@ -186,16 +276,64 @@ export default function Home() {
         </section>
 
         {/* chamada promo */}
-        <section className="bg-orange-600 text-white">
-          <div className="container flex flex-col  box-1 ">
+        <section className="bg-[#FF3E00] text-white">
+          <div className="container flex flex-col  box-1 space-y-4">
+            <Image
+              className="w-full"
+              src="/images/computers.avif"
+              width={755}
+              height={464}
+              alt="Exercícios Adaptados"
+            />{" "}
             <h2 className="bebas">Veja tudo que você vai receber agora!</h2>
+            <div id="list-veja" className="font-bold text-lg space-y-2">
+              <div className="flex gap-2">
+                <FontAwesomeIcon icon={faCircleCheck} className="mt-1" />
+                Método Vitor Morais
+              </div>
+              <div className="flex gap-2">
+                <FontAwesomeIcon icon={faCircleCheck} className="mt-1" />
+                Comunidade Exclusiva
+              </div>
+              <div className="flex gap-2">
+                <FontAwesomeIcon icon={faCircleCheck} className="mt-1" />
+                Lives Exclusivas
+              </div>
+              <div className="flex gap-2">
+                <FontAwesomeIcon icon={faCircleCheck} className="mt-1" />
+                Bônus: Acesso gratuito aos próximos protocolos de treino
+              </div>
+            </div>
+            <div className="bg-slate-900 p-8 space-y-8 text-center">
+              <h3 className="bebas">Promoção de Lançamento</h3>
+              <div className="space-y-3">
+                <p className="font-bold">De R$ 197,00 por 12x de</p>
+                <p className="font-bold text-[#8FFF00] text-6xl">R$15,90</p>
+                <p className="font-bold">ou R$ 147,00 à vista</p>
+              </div>
+              <Link href="/" className="inline-block w-full">
+                <p className="green-button w-full text-center uppercase p-6">
+                  Eu Quero!!!
+                </p>
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* prazer sou vitor */}
         <section>
-          <div className="container flex flex-col  box-1 ">
-            <h2 className="bebas">Prazer, sou o vitor morais </h2>
+          <div className="container flex flex-col  box-1 space-y-4">
+            <div
+              style={{
+                backgroundImage: 'url("/images/vitor.avif")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="w-full h-[350px]"></div>
+
+            <h2 className="bebas text-6xl">
+              Prazer, sou o <span className="text-[#8FFF00]">vitor morais</span>
+            </h2>
             <p>
               Campeão Sul-americano de Calistenia e Street Workout e quinto
               colocado mundial no esporte.

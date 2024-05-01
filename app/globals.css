@@ -4,7 +4,7 @@
 
 @layer components {
   .green-button {
-    @apply px-6 py-3 bg-[#8FFF00] text-black inline-block rounded-md font-bold transition-all duration-300;
+    @apply px-6 py-3 bg-[#8FFF00] text-black rounded-md font-bold transition-all duration-300 inline-block;
   }
   .green-button:hover {
     @apply shadow-[0_0px_20px_0px_rgba(143,255,0,1)];
@@ -27,7 +27,7 @@ h2 {
 }
 h3 {
   font-size: clamp(32px, 5vw, 40px);
-  line-height: 4rem;
+  line-height: clamp(2.5rem, 5vw, 3.5rem);
 }
 h4 {
   font-size: clamp(24px, 5vw, 32px);
