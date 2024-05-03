@@ -15,7 +15,7 @@ config.autoAddCss = false;
 export default function Home() {
   return (
     <>
-      <div className="bg-black text-white">
+      <div className="text-white bg-black">
         {/* Hero */}
         <section
           style={{
@@ -24,7 +24,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}>
           {/* not mobile */}
-          <div className="flex flex-row  box-1 hidden xl:flex xl:gap-4 overflow-hidden px-0 ">
+          <div className="flex flex-row hidden px-0 overflow-hidden box-1 xl:flex xl:gap-4 ">
             <div
               id="hero_content"
               className="flex flex-col gap-4 w-[600px] min-w-[400px] ml-48">
@@ -78,7 +78,7 @@ export default function Home() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}></div>
-            <div className=" flex flex-col container  box-1 md:px-24">
+            <div className="container flex flex-col box-1 md:px-24">
               <div id="hero_content" className="flex flex-col gap-4">
                 <Image
                   className="w-1/2"
@@ -97,7 +97,7 @@ export default function Home() {
                   em treinos que tomam menos de 30 minutos do seu dia.
                 </p>
                 <Link href="/" className="">
-                  <p className="green-button w-full text-center">
+                  <p className="w-full text-center green-button">
                     Quero o Método Vitor Morais
                   </p>
                 </Link>
@@ -111,11 +111,11 @@ export default function Home() {
 
         {/* 4 Fotos */}
         <section>
-          <div className="container flex flex-col  box-1 space-y-4 md:items-center">
-            <h2 className="bebas h2bebas text-center">
+          <div className="container flex flex-col space-y-4 box-1 md:items-center">
+            <h2 className="text-center bebas h2bebas">
               Quem treinou comigo comprova os resultados
             </h2>
-            <div className="gap-4 grid grid-cols-1 md:grid-cols-2 md:w-full xl:w-3/4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:w-full xl:w-3/4">
               <Image
                 className="w-full rounded-2xl"
                 src="/images/prova1.avif"
@@ -146,7 +146,7 @@ export default function Home() {
               />
             </div>
             <Link href="/" className="">
-              <p className="green-button w-full text-center md:w-fit">
+              <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
             </Link>
@@ -155,8 +155,8 @@ export default function Home() {
 
         {/* O que é o metodo vitor morais */}
         <section>
-          <div className="container flex flex-col  box-1 space-y-4 md:items-center md:text-center">
-            <h2 className="bebas h2bebas w-3/4 md:w-full md:text-6xl">
+          <div className="container flex flex-col space-y-4 box-1 md:items-center md:text-center">
+            <h2 className="w-3/4 bebas h2bebas md:w-full md:text-6xl">
               O que é o Método Vitor Morais?
             </h2>
             <p className="text-xl">
@@ -192,7 +192,7 @@ export default function Home() {
               </strong>
             </p>
             <Link href="/" className="">
-              <p className="green-button w-full text-center md:w-fit">
+              <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
             </Link>
@@ -201,13 +201,13 @@ export default function Home() {
 
         {/* alem disso voce tera */}
         <section className="bg-[#FF3E00] text-white">
-          <div className="container flex flex-col box-1 space-y-4 md:space-y-8">
-            <h2 className="bebas w-3/4 md:w-full h2bebas md:text-6xl md:text-center">
+          <div className="container flex flex-col space-y-4 box-1 md:space-y-8">
+            <h2 className="w-3/4 bebas md:w-full h2bebas md:text-6xl md:text-center">
               Além disso, você terá acesso a:
             </h2>
 
             <div className="flex flex-col space-y-4 md:flex-row md:gap-4 md:space-y-0 md:items-center">
-              <div className="text-xl font-bold flex gap-4 items-center md:flex-col md:text-center md:h-full md:w-full">
+              <div className="flex items-center gap-4 text-xl font-bold md:flex-col md:text-center md:h-full md:w-full">
                 <Image
                   className="w-12 md:h-12"
                   src="/images/whatsapp.svg"
@@ -217,7 +217,7 @@ export default function Home() {
                 />
                 <p>Comunidade Exclusiva no Whatsapp</p>
               </div>
-              <div className="text-xl font-bold flex gap-4 items-center md:flex-col md:text-center md:h-full md:w-full">
+              <div className="flex items-center gap-4 text-xl font-bold md:flex-col md:text-center md:h-full md:w-full">
                 <Image
                   className="w-12 md:h-12"
                   src="/images/lives.svg"
@@ -227,7 +227,7 @@ export default function Home() {
                 />
                 <p>Lives exclusivas com a comunidade</p>
               </div>
-              <div className="text-xl font-bold flex gap-4 items-center md:flex-col md:text-center md:h-full md:w-full">
+              <div className="flex items-center gap-4 text-xl font-bold md:flex-col md:text-center md:h-full md:w-full">
                 <Image
                   className="w-12 md:h-12"
                   src="/images/protocolos.svg"
@@ -243,7 +243,7 @@ export default function Home() {
 
         {/* veja de onde quiser */}
         <section>
-          <div className="container flex flex-col box-1 space-y-4 md:items-center">
+          <div className="container flex flex-col space-y-4 box-1 md:items-center">
             <h2 className="bebas h2bebas md:text-6xl md:text-center ">
               Veja de onde você quiser!
             </h2>
@@ -253,7 +253,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faTv} size="2x" className="w-[48px]" />
                 <div>
                   Faça as aulas na sua{" "}
-                  <span className="text-orange-600 inline">Smart TV</span>
+                  <span className="inline text-orange-600">Smart TV</span>
                 </div>
               </div>
               <div className="p-8 flex gap-4 border-slate-700 border-[1px] items-center rounded-2xl md:flex-col md:text-center md:h-full">
@@ -264,7 +264,7 @@ export default function Home() {
                 />
                 <div>
                   Assista no{" "}
-                  <span className="text-orange-600 inline">computador</span>
+                  <span className="inline text-orange-600">computador</span>
                 </div>
               </div>
               <div className="p-8 flex gap-4 border-slate-700 border-[1px] items-center rounded-2xl md:flex-col md:text-center md:h-full">
@@ -275,7 +275,7 @@ export default function Home() {
                 />
                 <div>
                   Assista no{" "}
-                  <span className="text-orange-600 inline">
+                  <span className="inline text-orange-600">
                     tablet ou celular
                   </span>
                 </div>
@@ -283,7 +283,7 @@ export default function Home() {
             </div>
 
             <Link href="/" className="">
-              <p className="green-button w-full text-center md:w-fit">
+              <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
             </Link>
@@ -292,7 +292,7 @@ export default function Home() {
 
         {/* tabela */}
         <section className="hidden">
-          <div className="container flex flex-col  box-1 ">
+          <div className="container flex flex-col box-1 ">
             <h2 className="bebas">
               Chegou a sua vez de entrar em forma e alcançar o corpo perfeito!
             </h2>
@@ -301,7 +301,7 @@ export default function Home() {
 
         {/* chamada promo */}
         <section className="bg-[#FF3E00] text-white">
-          <div className="container flex flex-col  box-1 space-y-4 md:flex-row md:items-center">
+          <div className="container flex flex-col space-y-4 box-1 md:flex-row md:items-center">
             <div className="space-y-4">
               <Image
                 className="w-full"
@@ -313,7 +313,7 @@ export default function Home() {
               <h2 className="bebas h2bebas">
                 Veja tudo que você vai receber agora!
               </h2>
-              <div id="list-veja" className="font-bold text-lg space-y-2">
+              <div id="list-veja" className="space-y-2 text-lg font-bold">
                 <div className="flex gap-2">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
@@ -344,8 +344,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-900 p-8 space-y-8 text-center rounded-2xl h-fit">
-              <h2 className="bebas text-6xl md:h2bebas ">
+            <div className="p-8 space-y-8 text-center bg-slate-900 rounded-2xl h-fit">
+              <h2 className="text-6xl bebas md:h2bebas ">
                 Promoção de Lançamento
               </h2>
               <div className="space-y-3">
@@ -358,7 +358,7 @@ export default function Home() {
                 <p className="font-bold">ou R$147,00 à vista</p>
               </div>
               <Link href="/" className="inline-block w-full">
-                <p className="green-button w-full text-center uppercase p-6">
+                <p className="w-full p-6 text-center uppercase green-button">
                   Eu Quero!!!
                 </p>
               </Link>
@@ -368,17 +368,17 @@ export default function Home() {
 
         {/* prazer sou vitor */}
         <section>
-          <div className="container flex flex-col  box-1 space-y-4 md:flex-row md:gap-8">
+          <div className="container flex flex-col space-y-4 box-1 md:flex-row md:gap-8">
             <div
               style={{
                 backgroundImage: 'url("/images/vitor.avif")',
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="w-full h-[350px] rounded-2xl md:w-1/2"></div>
+              className="w-full h-80 rounded-2xl md:w-1/2 md:h-[560px] xl:h-[500px]"></div>
             <div className="space-y-4 md:w-1/2">
-              <h1 className="bebas h1bebas w-3/4 ">
-                Prazer, sou o{" "}
+              <h1 className=" bebas h1bebas xl:w-full md:text-6xl xl:text-7xl">
+                Prazer, sou o<br />
                 <span className="text-[#8FFF00]">vitor morais</span>
               </h1>
               <p>
@@ -413,7 +413,7 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
           }}>
-          <div className="container flex flex-col  box-1 space-y-4">
+          <div className="container flex flex-col space-y-4 box-1">
             <h2 className="bebas h2bebas md:text-6xl">7 Dias sem risco!</h2>
             <div className="flex text-yellow-400">
               <FontAwesomeIcon icon={faStar} size="2x" />
@@ -432,7 +432,7 @@ export default function Home() {
 
         {/* last call */}
         <section>
-          <div className="container flex flex-col  box-1 text-center space-y-4 items-center">
+          <div className="container flex flex-col items-center space-y-4 text-center box-1">
             <div className="p-8 space-y-8 text-center rounded-2xl  border-[#8fff00] border-[1px] md:w-[500px]">
               <h2 className="bebas h2bebas md:text-6xl">
                 Essa promoção não vai se repetir!
@@ -447,7 +447,7 @@ export default function Home() {
                 <p className="font-bold">ou R$147,00 à vista</p>
               </div>
               <Link href="/" className="inline-block w-full">
-                <p className="green-button w-full text-center uppercase p-6">
+                <p className="w-full p-6 text-center uppercase green-button">
                   Eu Quero!!!
                 </p>
               </Link>
@@ -457,9 +457,12 @@ export default function Home() {
 
         {/* faq */}
         <section>
-          <div className="container flex flex-col  box-1 space-y-4 [&_h5]:text-[#8fff00] md:flex-row md:space-y-0">
-            <h2 className="bebas h2bebas md:text-6xl">Perguntas frequentes</h2>
-            <div className="space-y-4">
+          <div className="container flex flex-col  box-1 space-y-4 [&_h5]:text-[#8fff00] md:flex-row md:space-y-0 md:space-x-8">
+            <h2 className="bebas h2bebas md:text-6xl md:w-1/2 xl:text-7xl">
+              Perguntas <br />
+              frequentes
+            </h2>
+            <div className="space-y-4 md:w-1/2">
               <div className="pb-4 border-b-[1px] border-b-slate-700">
                 <h5>Posso parcelar?</h5>
                 <p>Sim. Poderá parcelar em até 5x.</p>
