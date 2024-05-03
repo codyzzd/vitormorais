@@ -12,7 +12,10 @@ import Image from "next/image";
 import Link from "next/link";
 config.autoAddCss = false;
 
+
+
 export default function Home() {
+  const linkpay = "https://pay.hotmart.com/E90271273F?off=2r0n0y5x";
   return (
     <>
       <div className="text-white bg-black">
@@ -44,13 +47,13 @@ export default function Home() {
                 <strong>perder peso, ganhar força e definir o corpo</strong> em
                 treinos que tomam menos de 30 minutos do seu dia.
               </p>
-              <Link href="/" className="mt-8">
+              <Link href={linkpay} className="mt-8">
                 <p className="green-button">
                   Quero ter acesso ao Método Vitor Morais
                 </p>
               </Link>
               <p className="">
-                De 12x de R$ 39,90 por 12x de R$ 19,90 no plano anual
+                De 12x de R$39,90 por 12x de R$14,67 no plano anual
               </p>
             </div>
             <Image
@@ -105,13 +108,14 @@ export default function Home() {
                   <strong>perder peso, ganhar força e definir o corpo</strong>{" "}
                   em treinos que tomam menos de 30 minutos do seu dia.
                 </p>
-                <Link href="/" className="">
+                <Link href={linkpay}>
                   <p className="w-full text-center green-button">
                     Quero o Método Vitor Morais
+
                   </p>
                 </Link>
                 <p className="">
-                  De 12x de R$ 39,90 por 12x de R$ 19,90 no plano anual
+                  De 12x de R$ 39,90 por 12x de R$ 14,67 no plano anual
                 </p>
               </div>
             </div>
@@ -154,7 +158,7 @@ export default function Home() {
                 alt="Prova 4"
               />
             </div>
-            <Link href="/" className="">
+            <Link href={linkpay} className="">
               <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
@@ -200,7 +204,7 @@ export default function Home() {
                 seguindo meu protocolo para alcançar sua melhor versão!
               </strong>
             </p>
-            <Link href="/" className="">
+            <Link href={linkpay} className="">
               <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
@@ -291,7 +295,7 @@ export default function Home() {
               </div>
             </div>
 
-            <Link href="/" className="">
+            <Link href={linkpay} className="">
               <p className="w-full text-center green-button md:w-fit">
                 Quero o Método Vitor Morais
               </p>
@@ -359,14 +363,14 @@ export default function Home() {
               </h2>
               <div className="space-y-3">
                 <p className="font-bold">
-                  De <span className="line-through">R$197,00</span> por 12x de
+                  De <span className="line-through">R$397,00</span> por 12x de
                 </p>
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
-                  R$19,90
+                  R$14,67
                 </p>
                 <p className="font-bold">ou R$147,00 à vista</p>
               </div>
-              <Link href="/" className="inline-block w-full">
+              <Link href={linkpay} className="inline-block w-full">
                 <p className="w-full p-6 text-center uppercase green-button">
                   Eu Quero!!!
                 </p>
@@ -448,14 +452,14 @@ export default function Home() {
               </h2>
               <div className="space-y-3">
                 <p className="font-bold">
-                  De <span className="line-through">R$197,00</span> por 12x de
+                  De <span className="line-through">R$397,00</span> por 12x de
                 </p>
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
-                  R$19,90
+                  R$14,67
                 </p>
                 <p className="font-bold">ou R$147,00 à vista</p>
               </div>
-              <Link href="/" className="inline-block w-full">
+              <Link href={linkpay} className="inline-block w-full">
                 <p className="w-full p-6 text-center uppercase green-button">
                   Eu Quero!!!
                 </p>
