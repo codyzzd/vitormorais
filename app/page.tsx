@@ -70,6 +70,15 @@ export default function Home() {
           </div>
           {/* mobile */}
           <div id="mobile_content" className="xl:hidden">
+            <div className="container flex flex-col box-1 md:px-24 md:hidden">
+              <Image
+                className="w-1/2 -mb-24"
+                src="/images/vitorlogo.avif"
+                width={164}
+                height={164}
+                alt="Logo Método Vitor Morais"
+              />
+            </div>
             <div
               id="hero_image_mobile"
               className="w-full h-[500px]"
@@ -81,7 +90,7 @@ export default function Home() {
             <div className="container flex flex-col box-1 md:px-24">
               <div id="hero_content" className="flex flex-col gap-4">
                 <Image
-                  className="w-1/2"
+                  className="hidden w-1/2 md:flex"
                   src="/images/vitorlogo.avif"
                   width={164}
                   height={164}
