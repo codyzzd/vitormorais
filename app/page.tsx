@@ -106,7 +106,7 @@ export default function Home() {
                 <p className="text-xl">
                   Obtenha acesso ao meu método de treino e veja como é simples{" "}
                   <strong>perder peso, ganhar força e definir o corpo</strong>{" "}
-                  em treinos que tomam menos de 30 minutos do seu dia.
+                  com treinos que tomam menos de 30 minutos do seu dia.
                 </p>
                 <Link href={linkpay}>
                   <p className="w-full text-center green-button">
@@ -201,7 +201,7 @@ export default function Home() {
               Durante <strong>quatro semanas</strong> você terá treinos
               exclusivos e únicos diariamente,
               <strong>
-                seguindo meu protocolo para alcançar sua melhor versão!
+                 seguindo meu protocolo para alcançar sua melhor versão!
               </strong>
             </p>
             <Link href={linkpay} className="">
@@ -409,7 +409,7 @@ export default function Home() {
               </p>
               <p>
                 Foi atráves de anos de prática e persistência que me tornei
-                Multicampeão da categoria, com resultados notáveis: 5o colocado
+                Multicampeão da categoria, com resultados notáveis: 5º colocado
                 no campeonato mundial que participei na Letônia campeão
                 sul-americano e referência internacional no esporte.
               </p>
