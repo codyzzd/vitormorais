@@ -1,3 +1,5 @@
+"use client";
+// fontawesome icons
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import {
@@ -8,14 +10,42 @@ import {
   faTv,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// nextjs
 import Image from "next/image";
 import Link from "next/link";
 config.autoAddCss = false;
 
+// // gsap stuff
+// import { useGSAP } from "@gsap/react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { TextPlugin } from "gsap/TextPlugin";
+// gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin,SplitText);
 
+//link cta
+const linkpay = "https://pay.hotmart.com/E90271273F?off=2r0n0y5x";
 
 export default function Home() {
-  const linkpay = "https://pay.hotmart.com/E90271273F?off=2r0n0y5x";
+  // GSAP animations
+  // useGSAP(() => {
+  //   gsap.from(".t80", {
+  //     opacity: 0,
+  //     y: -80,
+  //     delay: 1,
+  //     // autoAlpha:1,
+  //     // stagger:0.1,
+  //   });
+  // }, []);
+
+  // var split = new SplitText(".text80", {type: "lines", position: "absolute"});
+  // gsap.from(split.lines, {duration: 1, x: 200, autoAlpha: 0, ease: "power3", stagger: 0.05});
+
+  // ScrollTrigger.batch(".t80", {
+  //   interval: 1,
+  //   onEnter: batch => gsap.to(batch,{autoAlpha:1,stagger:0.1})
+  // });
+
   return (
     <>
       <div className="text-white bg-black">
@@ -27,12 +57,12 @@ export default function Home() {
             backgroundPosition: "center",
           }}>
           {/* not mobile */}
-          <div className="flex flex-row hidden px-0 overflow-hidden box-1 xl:flex xl:gap-4 ">
+          <div className="hidden px-0 overflow-hidden box-1 xl:flex xl:gap-4 ">
             <div
               id="hero_content"
               className="flex flex-col gap-4 w-[600px] min-w-[400px] ml-48">
               <Image
-                className="w-1/2 mb-8"
+                className="w-1/2 mb-8 t80"
                 src="/images/vitorlogo.avif"
                 width={164}
                 height={164}
@@ -75,7 +105,7 @@ export default function Home() {
           <div id="mobile_content" className="xl:hidden">
             <div className="container flex flex-col box-1 md:px-24 md:hidden">
               <Image
-                className="w-1/2 -mb-24"
+                className="w-1/2 -mb-24 t80"
                 src="/images/vitorlogo.avif"
                 width={164}
                 height={164}
@@ -93,13 +123,13 @@ export default function Home() {
             <div className="container flex flex-col box-1 md:px-24">
               <div id="hero_content" className="flex flex-col gap-4">
                 <Image
-                  className="hidden w-1/2 md:flex"
+                  className="hidden w-1/2 md:flex t80"
                   src="/images/vitorlogo.avif"
                   width={164}
                   height={164}
                   alt="Logo Método Vitor Morais"
                 />
-                <h1 className="bebas h1bebas ">
+                <h1 className="bebas h1bebas text80">
                   Transforme seu corpo treinando no conforto da sua casa com
                   poucos minutos do seu dia
                 </h1>
@@ -111,7 +141,6 @@ export default function Home() {
                 <Link href={linkpay}>
                   <p className="w-full text-center green-button">
                     Quero o Método Vitor Morais
-
                   </p>
                 </Link>
                 <p className="">
@@ -201,7 +230,7 @@ export default function Home() {
               Durante <strong>quatro semanas</strong> você terá treinos
               exclusivos e únicos diariamente,
               <strong>
-                 seguindo meu protocolo para alcançar sua melhor versão!
+                seguindo meu protocolo para alcançar sua melhor versão!
               </strong>
             </p>
             <Link href={linkpay} className="">
@@ -478,7 +507,7 @@ export default function Home() {
             <div className="space-y-4 md:w-1/2">
               <div className="pb-4 border-b-[1px] border-b-slate-700">
                 <h5>Posso parcelar?</h5>
-                <p>Sim. Poderá parcelar em até 5x.</p>
+                <p>Sim. Poderá parcelar em até 12x.</p>
               </div>
               <div className="pb-4 border-b-[1px] border-b-slate-700">
                 <h5>Existe garantia?</h5>
