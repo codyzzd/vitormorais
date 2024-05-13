@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
               </Link>
               <p className="">
-                De 12x de R$19,66 por 12x de R$14,67 no plano anual
+              De 12x de R$39,90 por 12x de R$19,66 no plano anual
               </p>
             </div>
             <Image
@@ -144,7 +144,7 @@ export default function Home() {
                   </p>
                 </Link>
                 <p className="">
-                  De 12x de R$ 19,66 por 12x de R$ 14,67 no plano anual
+                De 12x de R$39,90 por 12x de R$19,66 no plano anual
                 </p>
               </div>
             </div>
