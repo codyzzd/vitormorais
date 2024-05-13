@@ -24,7 +24,7 @@ config.autoAddCss = false;
 // gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin,SplitText);
 
 //link cta
-const linkpay = "https://pay.hotmart.com/E90271273F?off=2r0n0y5x";
+const linkpay = "https://pay.hotmart.com/E90271273F?sck=HOTMART_PRODUCT_PAGE&off=5gopse1s&hotfeature=32&_gl=1*g619rj*_ga*MTU5Njk1MzE3MS4xNjk5OTE1NTY0*_ga_GQH2V1F11Q*MTcxNTYwOTAxMC40OS4xLjE3MTU2MDkyNzguNjAuMC4w&bid=1715609282379";
 
 export default function Home() {
   // GSAP animations
@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
               </Link>
               <p className="">
-                De 12x de R$39,90 por 12x de R$14,67 no plano anual
+                De 12x de R$19,66 por 12x de R$14,67 no plano anual
               </p>
             </div>
             <Image
@@ -144,7 +144,7 @@ export default function Home() {
                   </p>
                 </Link>
                 <p className="">
-                  De 12x de R$ 39,90 por 12x de R$ 14,67 no plano anual
+                  De 12x de R$ 19,66 por 12x de R$ 14,67 no plano anual
                 </p>
               </div>
             </div>
@@ -377,7 +377,7 @@ export default function Home() {
                   />
                   Lives Exclusivas
                 </div>
-                <div className="flex gap-2">
+                <div className="gap-2 hidden">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="mt-1 text-[#8FFF00]"
@@ -388,7 +388,7 @@ export default function Home() {
             </div>
             <div className="p-8 space-y-8 text-center bg-slate-900 rounded-2xl h-fit">
               <h2 className="text-6xl bebas md:h2bebas ">
-                Promoção de Lançamento
+               Acesse Agora!
               </h2>
               <div className="space-y-3">
                 <p className="font-bold">
@@ -397,7 +397,7 @@ export default function Home() {
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
                   R$14,67
                 </p>
-                <p className="font-bold">ou R$147,00 à vista</p>
+                <p className="font-bold">ou R$197,00 à vista</p>
               </div>
               <Link href={linkpay} className="inline-block w-full">
                 <p className="w-full p-6 text-center uppercase green-button">
@@ -486,7 +486,7 @@ export default function Home() {
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
                   R$14,67
                 </p>
-                <p className="font-bold">ou R$147,00 à vista</p>
+                <p className="font-bold">ou R$197,00 à vista</p>
               </div>
               <Link href={linkpay} className="inline-block w-full">
                 <p className="w-full p-6 text-center uppercase green-button">
