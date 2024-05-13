@@ -477,7 +477,7 @@ export default function Home() {
           <div className="container flex flex-col items-center space-y-4 text-center box-1">
             <div className="p-8 space-y-8 text-center rounded-2xl  border-[#8fff00] border-[1px] md:w-[500px]">
               <h2 className="bebas h2bebas md:text-6xl">
-                Essa promoção não vai se repetir!
+                Acesse agora
               </h2>
               <div className="space-y-3">
                 <p className="font-bold">
