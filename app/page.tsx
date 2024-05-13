@@ -395,7 +395,7 @@ export default function Home() {
                   De <span className="line-through">R$397,00</span> por 12x de
                 </p>
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
-                  R$14,67
+                R$19,66
                 </p>
                 <p className="font-bold">ou R$197,00 à vista</p>
               </div>
@@ -484,7 +484,7 @@ export default function Home() {
                   De <span className="line-through">R$397,00</span> por 12x de
                 </p>
                 <p className="font-bold text-[#8FFF00] text-8xl bebas">
-                  R$14,67
+                  R$19,66
                 </p>
                 <p className="font-bold">ou R$197,00 à vista</p>
               </div>
