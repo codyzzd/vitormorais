@@ -8,8 +8,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/:path*",
-        destination: "https://helpful-music-830291.framer.app/:path*",
+        source: '/:path*',
+        destination: 'https://helpful-music-830291.framer.app/:path*',
       },
     ];
   },
