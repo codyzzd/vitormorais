@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/:path*",
-      "destination": "https://helpful-music-830291.framer.app/:path*"
-    }
-  ]
-}

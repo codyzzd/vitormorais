@@ -2,9 +2,9 @@
 /*const nextConfig = {};
 
 export default nextConfig;*/
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/*
+/* @type {import('next').NextConfig} */
+/*const nextConfig = {
   async rewrites() {
     return [
       {
@@ -15,4 +15,16 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default nextConfig;*/
+
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://helpful-music-830291.framer.app/:path*',
+      },
+    ]
+  },
+}
