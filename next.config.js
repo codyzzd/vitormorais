@@ -1,20 +1,12 @@
-/* @type {import('next').NextConfig} */
-/*const nextConfig = {};
-
-export default nextConfig;*/
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   async rewrites() {
     return {
       fallback: [
         {
-          source: "/:path*",
+          source: '/:path*',
           destination: `https://helpful-music-830291.framer.app/:path*`,
         },
       ],
-    };
+    }
   },
-};
-
-module.exports = nextConfig;
+}
