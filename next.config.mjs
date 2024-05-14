@@ -9,7 +9,7 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'https://helpful-music-830291.framer.app/:path*',
+        destination: `https://helpful-music-830291.framer.app/:path*`,
       },
     ];
   },
