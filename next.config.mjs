@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = {/*
   trailingSlash: true,
   async rewrites() {
     return [
@@ -8,7 +8,7 @@ const nextConfig = {
         destination: 'https://vitormorais.framer.website/:path*',
       },
     ];
-  },
+  },*/
 };
 
 export default nextConfig;
