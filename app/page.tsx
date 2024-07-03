@@ -69,7 +69,7 @@ export default function Home() {
                 alt="Logo Método Vitor Morais"
               />
               <h1 className="bebas h2bebas">
-              Queime gordura e conquiste um corpo trincado treinando 30 minutos por dia
+              Queime gordura e conquiste um <span className="bg-orange-600 text-white">corpo trincado</span> treinando 30 minutos por dia
               </h1>
               <p className="">
                 Obtenha acesso ao meu método de treino e veja como é simples{" "}
@@ -129,8 +129,7 @@ export default function Home() {
                   alt="Logo Método Vitor Morais"
                 />
                 <h1 className="bebas h1bebas text80">
-                  Transforme seu corpo treinando no conforto da sua casa com
-                  poucos minutos do seu dia
+                Queime gordura e conquiste um <span className="bg-orange-600 text-white">corpo trincado</span> treinando 30 minutos por dia
                 </h1>
                 <p className="text-xl">
                   Obtenha acesso ao meu método de treino e veja como é simples{" "}
